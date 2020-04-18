@@ -1,0 +1,101 @@
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<style>
+  body{
+    background-color: #16094e;
+    display: flex;
+    justify-content: center;
+  }
+  #container{
+    width: 700px;
+    color: white;
+    background-color: #180571;
+    font-family: "Libre Baskerville";
+    display: flex;
+    flex-direction: column;
+  }
+  .border{
+    border-color: darkgrey;
+    border-width: 5px;
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #title{
+    display: flex;
+    justify-content: center;
+  }
+  #content{
+    display: flex;
+    flex-direction: column;
+  }
+  #description{
+    display: flex;
+    text-align: center;
+  }
+  #survey-form{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    padding: 10px;
+  }
+  #radio-grid{
+    padding: 10px;
+    margin: 0px 0px 0px -10px;
+  }
+  #check-grid{
+    padding: 10px;
+    margin: 0px 0px 0px -10px;
+  }
+  .padding{
+    margin: 0px 0px 0px -10px;
+    padding: 10px;
+  }
+
+</style>
+
+<main>
+  <div id = "container" class = "border">
+    <h1 id = "title">This is a survey about staying at home</h1>
+    <div id = "content">
+      <p id = "description">This survey is to find out how people are feeling about staying home during the COVID-19 pandemic.</p>
+      <form id = "survey-form">
+        
+        <label id = "name-label" class = padding>Please insert name here: </label>
+        <input id = "name" type= "text" required placeholder="Insert Name Here"</input>
+        
+        <label id = "email-label" class = padding>Please insert email here: </label>
+        <input id = "email" type= "email" required placeholder= "Insert Email Here"</input>
+        
+        <label id = "age-label" class = padding>Insert age here (Optional)</label>
+        <input id = "age" type = "number" min = "1" max = "100" placeholder= "Age"</input>
+        
+        <label id = "dropdown-label" class = padding>What is your gender?</label>
+        <select id = "dropdown" placeholder= "Select one...">
+          <option value = "" disabled selected hidden></option>
+          <option value = "Male">Male</option>
+          <option value = "Male">Female</option>
+          <option value = "Male">Other</option>
+          <option value = "Male">Prefer not to say</option>
+        </select>
+        
+        <div id= "radio-grid">
+          <label id = "radio-label" for "yes-no" class = padding>Are you happy in isolation?</label><br><br>
+          <input type ="radio" name = "yes-no">Yes</input>
+          <input type ="radio" name = "yes-no">No</input>
+        </div>
+        <div id = "check-grid">
+          <label id = "checkbox-label" for "checks" class = padding>What do you miss out of these?</label><br><br>
+          <input value = "Pubs" type= "checkbox" name= "checks">Pubs</input><br><br>
+          <input value = "Parks" type= "checkbox" name= "checks">Parks</input><br><br>
+          <input value = "Beaches" type= "checkbox" name= "checks">Beaches</input><br><br>
+          <input value = "Clubs" type= "checkbox" name= "checks">Clubs</input><br>
+        </div> 
+
+        <label id = "comments-label" class = padding>Insert your feelings about the situation below: </label>
+        <textarea rows = "4" id = "extra-comments" type= "text" placeholder= "Extra Comments" class = padding></textarea><br>
+        <button id = "submit" type = "submit"> Submit form</button>
+
+      </form>
+    </div
+  </div>
+</main>
