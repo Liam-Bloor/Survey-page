@@ -1,0 +1,59 @@
+
+  body{
+    background-color: #16094e;
+    background-image: url("Background.png");
+    background-size: 20vmax;
+    display: flex;
+    font-size: 1vmax;
+    justify-content: center;
+  }
+  #container{
+    width: 100%;
+    color: white;
+    background-color: #5D007D;
+    //#180571  #5D007D #820011 #004304
+    font-family: "Libre Baskerville";
+    display: flex;
+    flex-direction: column;
+  }
+  .border{
+    border-color: darkgrey;
+    border-width: 5px;
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #title{
+    display: flex;
+    justify-content: center;
+  }
+  #content{
+    display: flex;
+    flex-direction: column;
+  }
+  #description{
+    display: flex;
+    text-align: center;
+  }
+  #survey-form{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    padding: 5px;
+  }
+  #radio-grid{
+    padding: 5px;
+    margin: 0px 0px 0px -5px;
+  }
+  #check-grid{
+    padding: 10px;
+    margin: 0px 0px 0px -10px;
+  }
+  .padding{
+    margin: 0px 0px 0px -5px;
+    padding: 5px;
+  }
+  .usr-input{
+    font-size: 1vmax;
+    border-radius: 5px;
+  }
